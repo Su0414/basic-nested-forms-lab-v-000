@@ -4,11 +4,11 @@
   <ul>
      <%= f.fields_for :ingredients do |ingredient| %>
      <li>
-       name: <%= ingredient.text_field :name %>
-       qty: <%= ingredient.text_field :quantity %>
+       Name: <%= ingredient.text_field :name %>
+       Quantity: <%= ingredient.text_field :quantity %>
      </li>
      <% end %>
-     <%= link_to 'add ingredient', @recipe %>
+     <%= link_to 'Add Ingredient', @recipe %>
    </ul>
    <%= f.submit %>
 
